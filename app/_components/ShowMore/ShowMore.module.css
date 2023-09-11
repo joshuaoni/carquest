@@ -1,0 +1,18 @@
+.cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.btn {
+  background: #1976d2;
+  border-radius: 1000px;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+  background: #1976d2c6;
+}

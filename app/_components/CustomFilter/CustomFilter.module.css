@@ -1,0 +1,70 @@
+.container {
+  width: fit-content;
+}
+
+.filter__btn {
+  position: relative;
+  width: 100%;
+  min-width: 127px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: white;
+  padding: 4px 6px;
+  text-align: left;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.listbox {
+  position: relative;
+  z-index: 10;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.filter__btn > span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.img {
+  margin-left: 1rem;
+  object-fit: contain;
+}
+
+.active {
+  background: #1976d2;
+  position: relative;
+  cursor: default;
+  padding: 4px 8px;
+  user-select: none;
+  color: white;
+}
+
+.disabled {
+  color: gray;
+  position: relative;
+  cursor: default;
+  padding: 4px 8px;
+  user-select: none;
+}
+
+.listbox ul {
+  list-style: none;
+  padding: 0;
+  border: solid 1px gray;
+  margin: 0;
+  background: white;
+  position: absolute;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .filter__btn {
+    font-size: 14px;
+  }
+}

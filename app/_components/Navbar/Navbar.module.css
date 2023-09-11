@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 48px;
+}
+
+.container {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: #1976d2;
+  font-weight: 500;
+  border-radius: 1000px;
+  background: white;
+  width: 130px;
+  text-transform: capitalize;
+  border: solid 1px #1976d2;
+}
+
+.btn:hover {
+  background: #ffffffc8;
+}

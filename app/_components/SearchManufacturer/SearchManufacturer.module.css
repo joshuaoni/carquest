@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cont {
+  position: relative;
+  width: 100%;
+}
+
+.combo_btn {
+  position: absolute;
+  top: 14px;
+  left: 2px;
+  border: none;
+}
+
+.logo {
+  margin-left: 1rem;
+}
+
+.combo_input {
+  width: 100%;
+  padding: 1rem;
+  padding-left: 3.2rem;
+  box-sizing: border-box;
+  background: #f3f3f3;
+  outline: none;
+  border-top-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+}
+
+.option {
+  padding: 4px 8px 4px 3rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.noti {
+  padding: 4px 8px 4px 3rem;
+}
+
+.cont ul {
+  list-style: none;
+  border: 1px solid #cbcaca;
+  padding: 4px 0 !important;
+  margin: 0;
+  padding: 0;
+  height: max-content;
+  max-height: 200px;
+  background: white;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  z-index: 11;
+}
+
+.cont li {
+  background: white;
+  color: black;
+}
+
+.cont li:hover {
+  background: #1976d2;
+}
+
+.active_btn {
+  background: #1976d2;
+  color: white;
+}
+
+.disabled_btn {
+  background: #1976d2a0;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+  }
+
+  .combo_input {
+    border-radius: 1000px;
+    /* padding-left: 0; */
+    /* padding-right: 0; */
+  }
+}
