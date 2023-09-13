@@ -66,11 +66,9 @@ const CustomFilter = ({title, options}: CustomFilterProps) => {
                                         value={option}
                                         className={({active, selected}) => `${active || selected ? styles.active : styles.disabled}`}
                                     >
-                                        {({selected}) => (
-                                            <span>
-                                                {option.title}
-                                            </span>
-                                        )}
+                                        <span>
+                                            {option.title}
+                                        </span>
                                     </Listbox.Option>
                                 ))}
                             </Listbox.Options>

@@ -6,14 +6,10 @@ import { CustomFilter, Search } from '../index';
 import { fuels, yearsOfProduction } from '@/app/_constants';
 import { ManufacturerProvider, SetManufacturerProvider } from '@/app/_contexts/ManufacturerProvider';
 import ModelProvider, { SetModelProvider } from '@/app/_contexts/ModelProvider';
-import { useSearchParams } from 'next/navigation';
 
 const Catalogue = () => {
-    const searchParams = useSearchParams();
-    
     const [manufacturer, setManufacturer] = useState<string>('Toyota');
     const [model, setModel] = useState<string>('Corolla');
-
 
     return (
         <>

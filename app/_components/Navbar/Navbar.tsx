@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Navbar.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../../public/logo.svg';
 import { Button } from '@mui/material';
 
 const Navbar = () => {
@@ -15,7 +14,7 @@ const Navbar = () => {
                         className={styles.logo}
                         href='/'>
                             <Image
-                                src={logo}
+                                src='/logo.svg'
                                 alt='logo'
                                 quality={100}
                                 width={118}

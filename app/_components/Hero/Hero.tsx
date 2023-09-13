@@ -8,10 +8,6 @@ import hero from '../../../public/hero.png';
 import Link from 'next/link';
 
 const Hero = () => {
-    const handleClick = () => {
-
-    }
-
     return (
         <>
             <div className={styles.hero}>

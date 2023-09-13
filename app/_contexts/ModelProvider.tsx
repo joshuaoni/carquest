@@ -3,7 +3,7 @@ import { createContext, useContext, SetStateAction, Dispatch } from "react";
 
 const ModelContext = createContext('Corolla');
 
-const SetModelContext= createContext((model: string) => {});
+const SetModelContext= createContext<Dispatch<SetStateAction<string>>>(() => {});
 
 export const useModel = () => {
     return useContext(ModelContext);

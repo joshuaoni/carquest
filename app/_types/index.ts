@@ -9,11 +9,6 @@ export interface LayoutProps {
   children: React.ReactNode
 }
 
-export interface SearchManufacturerProps {
-  manufacturer: string,
-  setManufacturer: (arg: string) => void
-}
-
 export interface CarProps {
   city_mpg: number,
   class: string,

@@ -8,7 +8,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useManufacturer } from '@/app/_contexts/ManufacturerProvider';
-import { useModel, useSetModel } from '@/app/_contexts/ModelProvider';;
+import { useModel, useSetModel } from '@/app/_contexts/ModelProvider';
 
 const Search = () => {
     const manufacturer = useManufacturer();
@@ -17,7 +17,7 @@ const Search = () => {
 
     const router = useRouter();
 
-    const handleSearch = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleSearch = () => {
         if (manufacturer === '' && model === '') {
             return alert('Please fill the input fields!');
         }

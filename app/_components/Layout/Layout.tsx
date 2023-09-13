@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Layout.module.css';
 import { LayoutProps } from '../../_types';
 
-const Layout = async ({ children } : LayoutProps) => {
+const Layout = ({ children } : LayoutProps) => {
 
     return (
         <>

@@ -4,7 +4,7 @@ import { createContext, useContext, SetStateAction, Dispatch } from "react";
 
 const ManufacturerContext= createContext('Toyota');
 
-const SetManufacturerContext= createContext((manufacturer: string) => {});
+const SetManufacturerContext= createContext<Dispatch<SetStateAction<string>>>(() => {});
 
 export const useManufacturer = () => {
     return useContext(ManufacturerContext);

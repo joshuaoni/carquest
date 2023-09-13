@@ -21,7 +21,7 @@ export const getCars = async (filters: FilterProps) => {
       headers: headers
     });
 
-    const result = await response.json();
+    const result = await response.json() as [];
 
     return [result, null];
   } catch (error) {

@@ -11,7 +11,7 @@ export default async function Home({ searchParams }: HomePageProps) {
         fuel: searchParams?.fuel || '',
         limit: searchParams?.limit || '9',
         model: searchParams?.model || ''
-    });
+    }) as [[], Error]
 
     return (
         <main className={styles.main}>

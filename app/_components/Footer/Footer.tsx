@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import Image from 'next/image';
-import logo from '../../../public/logo.svg';
 import { footerLinks } from '@/app/_constants';
 import Link from 'next/link';
 
@@ -13,7 +12,7 @@ const Footer = () => {
                 <div className={styles.container}>
                     <div className={styles.cont}>
                         <Image
-                            src={logo}
+                            src='/logo.svg'
                             alt='logo'
                             width={118}
                             height={18}

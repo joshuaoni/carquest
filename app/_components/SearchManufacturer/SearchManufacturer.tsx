@@ -2,10 +2,8 @@
 
 import React, { useState, Fragment } from 'react';
 import styles from './SearchManufacturer.module.css';
-import { SearchManufacturerProps } from '@/app/_types';
 import { Combobox, Transition } from '@headlessui/react';
 import Image from 'next/image';
-import logo from '../../../public/car-logo.svg';
 import { manufacturers } from '@/app/_constants';
 import { useSetManufacturer } from '@/app/_contexts/ManufacturerProvider';
 
@@ -25,7 +23,7 @@ const SearchManufacturer = () => {
                     <div className={styles.cont}>
                         <Combobox.Button className={styles.combo_btn}>
                             <Image 
-                                src={logo}
+                                src='/car-logo.svg'
                                 alt='Car logo'
                                 width={20}
                                 height={20}
