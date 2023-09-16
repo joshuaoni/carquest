@@ -36,3 +36,10 @@
 .btn:hover {
   background: #ffffffc8;
 }
+
+@media (max-width: 640px) {
+  .nav {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

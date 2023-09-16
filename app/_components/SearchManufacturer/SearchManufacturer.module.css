@@ -13,8 +13,11 @@
 .combo_btn {
   position: absolute;
   top: 14px;
-  left: 2px;
+  left: 20px;
   border: none;
+  background: transparent;
+  color: #747a88;
+  padding: 0;
 }
 
 .logo {
@@ -26,13 +29,14 @@
   padding: 1rem;
   padding-left: 3.2rem;
   box-sizing: border-box;
-  background: #f3f3f3;
+  background: white;
   outline: none;
-  border-top-left-radius: 1000px;
-  border-bottom-left-radius: 1000px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   font-size: 14px;
   line-height: 20px;
-  border: none;
+  border: solid 1px #d5d5d5;
+  border-right: none;
 }
 
 .option {
@@ -84,8 +88,7 @@
   }
 
   .combo_input {
-    border-radius: 1000px;
-    /* padding-left: 0; */
-    /* padding-right: 0; */
+    border-radius: 8px;
+    border: solid 1px #d5d5d5;
   }
 }

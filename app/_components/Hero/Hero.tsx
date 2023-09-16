@@ -5,7 +5,6 @@ import Image from 'next/image';
 import styles from './Hero.module.css';
 import Button from '@mui/material/Button';
 import hero from '../../../public/hero.png';
-import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -16,10 +15,19 @@ const Hero = () => {
 
                     <p className={styles.subtitle}>Streamline your car rental experience with our effortless booking process</p>
 
-                    <Button className={styles.btn} variant="contained">
-                        <Link href='#discover'>
+                    <Button 
+                    sx={{borderRadius: '1000px'}}
+                        className={styles.btn} 
+                        variant="contained"
+                        onClick={()=>{
+                            const e = document.getElementById('discover');
+                            e?.scrollIntoView({
+                                block: 'start',
+                                behavior: 'smooth',
+                                inline: 'start'
+                            })
+                        }}>
                             Explore Cars
-                        </Link>
                     </Button>
                 </div>
 

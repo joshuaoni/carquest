@@ -3,9 +3,9 @@
 import React, { useState, Fragment } from 'react';
 import styles from './SearchManufacturer.module.css';
 import { Combobox, Transition } from '@headlessui/react';
-import Image from 'next/image';
 import { manufacturers } from '@/app/_constants';
 import { useSetManufacturer } from '@/app/_contexts/ManufacturerProvider';
+import EmojiTransportationIcon from '@mui/icons-material/EmojiTransportation';
 
 const SearchManufacturer = () => {
     const [query, setQuery] = useState('');
@@ -22,14 +22,15 @@ const SearchManufacturer = () => {
                 <Combobox defaultValue={manufacturers[38]} onChange={setManufacturer}>
                     <div className={styles.cont}>
                         <Combobox.Button className={styles.combo_btn}>
-                            <Image 
+                            {/* <Image 
                                 src='/car-logo.svg'
                                 alt='Car logo'
                                 width={20}
                                 height={20}
                                 quality={100}
                                 className={styles.logo}
-                            />
+                            /> */}
+                            <EmojiTransportationIcon/>
                         </Combobox.Button>
 
                         <Combobox.Input 

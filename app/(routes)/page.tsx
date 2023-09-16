@@ -1,8 +1,8 @@
-import { Catalogue, Hero, Layout, CarComponent } from './_components';
+import { Catalogue, Hero, Layout, CarComponent } from '../_components';
 import styles from './page.module.css';
-import { getCars } from './_services';
-import { CarProvider } from './_contexts/CarProvider';
-import { HomePageProps } from './_types';
+import { getCars } from '../_services';
+import { CarProvider } from '../_contexts/CarProvider';
+import { HomePageProps } from '../_types';
 
 export default async function Home({ searchParams }: HomePageProps) {
     const [cars, error] = await getCars({
