@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.bottom}>
-                    <p>@2023 Carhub. All Rights Reserved</p>
+                    <p>@2023 Joshua Oni. All Rights Reserved</p>
 
                     <div className={styles.copyrights}>
                         <Link href='/'>Privacy Policy</Link>
