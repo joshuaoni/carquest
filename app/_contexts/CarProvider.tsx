@@ -1,10 +1,10 @@
 "use client";
 
 import { CarProviderProps } from "@/app/_types";
-import { createContext,useContext } from "react";
+import { createContext, useContext } from "react";
 
 //export const CarContext= createContext<null | CarProps[]>(null);
-const CarContext= createContext([]);
+const CarContext = createContext([]);
 
 export const useCars = () => {
     return useContext(CarContext);
